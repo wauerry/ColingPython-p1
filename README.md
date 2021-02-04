@@ -46,21 +46,21 @@ b) ```__str__()```: выводит путь до файла (или же исп�
 
 Базовый пример:
 ```python
->>> from solution import FileReader
->>> reader = FileReader('not_exist_file.txt')
->>> text = reader.read()
->>> text
-''
->>> with open('some_file.txt', 'w') as file:
-...     file.write('some text')
-...
-9
->>> reader = FileReader('some_file.txt')
->>> text = reader.read()
->>> text
-'some text'
->>> type(reader)
-<class 'solution.FileReader'>
+from solution import FileReader
+reader = FileReader('file_doesnt_exist.txt')
+text = reader.read()
+text
+>>> ''
+with open('some_file.txt', 'w') as file:
+     file.write('some text')
+
+reader = FileReader('some_file.txt')
+text = reader.read()
+text
+>>> 'some text'
+
+type(reader)
+>>> <class 'solution.FileReader'>
 ```
 
 

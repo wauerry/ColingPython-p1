@@ -14256,13 +14256,15 @@ $ конец строки
 </code></pre>
 <p><em>пр+ивет -&gt; привет, пррррррррррррривет</em></p>
 
-<pre><code>* : любое количество совпадений, в т.ч. 0</code></pre>
+<pre><code>* : любое количество совпадений, в т.ч. 0
+
+</code></pre>
+<p><em>кр</em>от -&gt; крот, кот, кррррот*</p>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><em>кр</em>от -&gt; крот, кот, кррррот*</p>
 
 <pre><code>{х,у} : от х до у совпадений
 
@@ -15390,47 +15392,16 @@ $ конец строки
 
 </div>
 
-</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[111]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">middle</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;[align=middle]&#39;</span><span class="p">)</span> <span class="c1"># все элементы с атрибутом align и его значением middle</span>
+</div></div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="highlight"><pre><span></span><span class="n">middle</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s1">&#39;[align=middle]&#39;</span><span class="p">)</span> <span class="c1"># все элементы с атрибутом align и его значением middle</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">middle</span><span class="p">)</span>
 </pre></div>
 
-     </div>
 </div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[&lt;div align=&#34;middle&#34;&gt;
-&lt;h1&gt;HTML Webpage&lt;/h1&gt;
-&lt;p&gt;Link to more interesting example: &lt;a href=&#34;https://keithgalli.github.io/web-scraping/webpage.html&#34;&gt;keithgalli.github.io/web-scraping/webpage.html&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;]
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div></section><section>
+</div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Сложно с select? Работаем с find!</p>
